@@ -2,15 +2,217 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/style/index.css" />
+    <link href="assets/style/index.css" rel="stylesheet" />
+    <link href="assets/style/main.css" rel="stylesheet" />
+    <link href="assets/style/components.css" rel="stylesheet" />
+    <link href="assets/icons/css/all.min.css" rel="stylesheet" />
     <meta
-      name="viewport"
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Guitar World</title>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+    <title>YUBook</title>
   </head>
+
   <body>
-    <h1>Hello world</h1>
+    <div class="body__wrapper">
+      <nav class="banner__navbar">
+        <div class="banner__navbar__logo v-flex--center">
+          <h2>
+            <i class="fas fa-book-open-reader"> </i>
+            YUBook
+          </h2>
+        </div>
+
+        <div class="banner__navbar__nav f-flex--center">
+          <a href="#home" class="banner__navbar__nav__anchor">Home</a>
+          <a href="#service" class="banner__navbar__nav__anchor">Service</a>
+          <a href="#feature" class="banner__navbar__nav__anchor">Feature</a>
+          <a href="#footer" class="banner__navbar__nav__anchor">Start</a>
+        </div>
+
+        <div class="banner__navbar__search f-flex--center">
+          <label for="search-bar" class="banner__nav__search__container">
+            <input
+                    type="text"
+                    id="search-bar"
+                    class="banner__navbar__search__input"
+            />
+            <i class="fas fa-caret-left"></i>
+            <i class="fas fa-search" title="search"></i>
+          </label>
+        </div>
+      </nav>
+      <header class="banner layout--container" id="home">
+
+        <div class="banner__content">
+          <section class="banner__content__side h--full">
+            <h1 class="banner__content__side__title">
+              Hi!
+              <br />
+              <b>John Doe</b>
+            </h1>
+
+            <p class="banner__content__side__description">
+              Welcome to <b>YUBook</b> <br>
+              feel free to navigate to know more about us and our service,
+              and why you (may / have) to use <strong>YUBook</strong>
+            </p>
+
+            <div class="banner__content__side__action">
+              <button class="btn btn--bounce">Get started</button>
+            </div>
+          </section>
+
+          <section class="banner__content__bg h--full"></section>
+        </div>
+      </header>
+
+      <main>
+        <section class="layout layout--container layout--normal" id="service">
+          <div class="layout__img">
+            <img src="assets/img/book/8.webp" alt="" />
+          </div>
+
+          <div class="layout__content">
+            <h3 class="layout__content__title">
+              From now on, read your dream book <strong>easily</strong>
+            </h3>
+
+            <h3 class="layout__content__subtitle">
+              The typical way <strong>(high costs)</strong>
+            </h3>
+
+            <div class="layout__content__features">
+              <div class="chip chip--shadow" fullWidth>
+                <i class="fas fa-coins chip__icon"></i>
+                <div class="chip__content">
+                  <strong class="chip__content__title">$10 / year</strong>
+                  Low cost subscription
+                </div>
+              </div>
+
+              <div class="chip chip--shadow" fullWidth>
+                <i class="fas fa-book-bookmark chip__icon icon--green"></i>
+                <div class="chip__content">
+                  <strong class="chip__content__title">Total</strong>
+                  cheap, relevant
+                </div>
+              </div>
+
+              <div class="chip chip--shadow" fullWidth>
+                <i class="fas fa-book-bookmark chip__icon icon--violet"></i>
+                <div class="chip__content">
+                  <strong class="chip__content__title">Accessibility</strong>
+                  get access to any book you want
+                </div>
+              </div>
+
+              <button class="btn btn--bounce btn--outline">
+                <i class="fas fa-play-circle btn__icons"></i>
+                How it works ?
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="layout layout--container layout--reversed" id="feature">
+          <div class="layout__content">
+            <h3 class="layout__content__title">
+              <strong>Read</strong> wherever you want
+            </h3>
+
+            <div class="layout__content__features">
+              <div class="chip chip--shadow" fullWidth>
+                <i class="fas fa-computer chip__icon icon--maroon"></i>
+                <div class="chip__content">
+                  <strong class="chip__content__title">Platforms</strong>
+                  you can use either phone / Tablet / pc
+                </div>
+              </div>
+
+              <div class="chip chip--shadow" fullWidth>
+                <i class="fas fa-book-bookmark chip__icon icon--green"></i>
+                <div class="chip__content">
+                  <strong class="chip__content__title">Total</strong>
+                  friendly, quick
+                </div>
+              </div>
+
+              <div class="chip chip--shadow" fullWidth>
+                <i class="fas fa-book-bookmark chip__icon icon--red"></i>
+                <div class="chip__content">
+                  <strong class="chip__content__title">Bookmarks system</strong>
+                  save bookmarks in your account
+                </div>
+              </div>
+
+              <button class="btn btn--bounce btn--outline">
+                <i class="fas fa-play-circle btn__icons"></i>
+                How it works ?
+              </button>
+            </div>
+          </div>
+
+          <div class="layout__img">
+            <img src="assets/img/book/3.jpg" alt="" />
+          </div>
+        </section>
+
+        <section class="advantage layout--container">
+          <div class="advantage__content">
+            <h1 class="advantage__content__title">Benefits ?</h1>
+
+            <p class="advantage__content__description">
+              Not only we are going to give you the
+              <u>best subscription offer</u> for books reading, but we're also
+              going to provide you the most popular book suggestion, so
+              <strong>you won't miss anything</strong>
+            </p>
+
+            <button class="btn btn--bounce">Learn more</button>
+          </div>
+
+          <div class="advantage__image"></div>
+        </section>
+      </main>
+    </div>
+
+    <footer class="footer" id="footer">
+      <div class="footer__account">
+        <div class="footer__account__content">
+          <h2 class="footer__account__content__title">YUBook</h2>
+          <div class="footer__account__content__checks">
+            <div class="footer__account__content__checks__element">
+              <i class="fas fa-check"></i>
+              cheap
+            </div>
+
+            <div class="footer__account__content__checks__element">
+              <i class="fas fa-check"></i>
+              without limitation
+            </div>
+
+            <div class="footer__account__content__checks__element"></div>
+          </div>
+        </div>
+        <div class="footer__account__actions">
+          <p class="footer__account__action__description">
+            <strong>YUBook</strong> app hasn't been realized, but you can enter
+            you email <br />
+            so you'll receive a notification when it's going to be realised
+          </p>
+
+          <button class="btn btn--bounce btn--outline" small>Email</button>
+        </div>
+      </div>
+
+      <div class="footer__bar">
+        Made with <i class="fas fa-heart"></i> by Yume
+        <a href="https://github.com/YumeT023" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,7 +1,5 @@
-## GUITAR WORLD
+## YUBOOK
 
-a website made for guitar fans.
+an example a modern landing page
 
-
-### using
-`HTML` and `CSS` only
+`html && css only`
